@@ -49,14 +49,14 @@
 }
 
 .header_title {
-  font-family: 'PressStart2P-Regular', Arial, sans-serif;
+  font-family: var(--accent-font);
   text-transform: uppercase;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   color: var(--accent-color);
 }
 
 .header_title_text {
-  font-family: 'PressStart2P-Regular', Arial, sans-serif;
+  font-family: var(--accent-font);
   text-transform: uppercase;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   color: var(--accent-color);
@@ -65,8 +65,7 @@
 
 .theme-menu {
   margin-top: 25px;
-  width: 84px;
-  height: 70px;
+  margin-left: 20px;
 }
 
 .theme-menu__list {
@@ -141,10 +140,6 @@
   min-inline-size: 375px;
 }
 
-.if {
-  margin-top: ;
-}
-
 .section_title {
   width: 48.33vw;
   border: 2px solid var(--accent-color);
@@ -155,8 +150,8 @@
 }
 
 .section_title_text {
-  font-family: 'Inter-Variable', Arial, sans-serif;
-  font-weight: var(--wght-title);
+  font-family: var(--main-font);
+  font-variation-settings: "wght" var(--wght-title);
   font-size: 18px;
   color: var(--accent-color);
   padding-top: 5px;
@@ -173,20 +168,16 @@
 
 .card_description_text {
   color: var(--accent-color);
-  font-weight: var(--wght-text);
+  font-variation-settings: "wght" var(--wght-text);
   font-size: 18px;
   margin-left: 25px;
   padding-top: 27px;
   margin-right: 25px;
 }
 
-.personal_memories {
-  margin-top: 0;
-}
-
 .card__like-button-container {
-  justify-self: center;
   align-self: flex-end;
+  align-items: center;
   margin-right: 25px;
   display: flex;
 }
@@ -202,6 +193,7 @@
   padding: 0;
   margin-top: 25px;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .card__like-button:hover::before {
@@ -222,12 +214,13 @@
 }
 
 .button__text {
-  font-family: 'PressStart2P-Regular', Arial, sans-serif;
+  font-family: var(--accent-font);
   align-self: center;
   font-size: 14px;
-  font-weight: var(--wght-text);
+  font-variation-settings: "wght" var(--wght-text);
   color: var(--accent-color-button);
   mix-blend-mode: difference;
+  cursor: pointer;
 }
 
 .card__icon-button {
@@ -250,77 +243,13 @@
   height: 38px;
   background-color: transparent;
   border: 2px solid var(--accent-color);
-  top: 25px;
   animation: opacity-higher 0.3s ease forwards;
+  top: -2px;
 }
 
 .like-icon {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.like-icon .main-body {
-  fill: var(--bkg-color);
-  transition: fill 0.3s linear;
-}
-
-.like-icon .core {
-  fill: var(--bkg-color);
-  transition: fill 0.3s linear 0.03s;
-}
-
-.like-icon .contour {
-  fill: var(--accent-color);
-  transition: fill 0.1s linear;
-}
-
-.like-icon .sparks {
-  fill: #f00;
-  opacity: 0;
-}
-
-.like-icon:hover .main-body {
-  fill: var(--accent-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon:hover .core {
-  fill: var(--accent-color);
-  transition: fill .3s linear; 
-}
-
-.like-icon:active .main-body {
-  fill: #f00;
-  transition: fill .3s linear 0.05s;
-}
-
-.like-icon:active .core {
-  fill: #f00;
-  transition: fill .3s linear; 
-}
-
-.like-icon.is-liked .core {
-  fill: #f00;
-  transition: fill .3s linear;
-}
-
-.like-icon.is-liked .main-body {
-  fill: #f00;
-  transition: fill .3s linear 0.05s;
-}
-
-.like-icon.is-liked .contour {
-  fill: #f00;
-  transition: fill .3s linear 0.06s;
-}
-
-.like-icon.is-liked .heart {
-  animation: scale-heart .3s ease-in alternate;
-  transform-origin: center;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks .3s .3s ease-in alternate;
+  align-self: center;
+  justify-self: center;
 }
 
 .wrapper {
@@ -342,7 +271,7 @@
   inset-inline-end: 0;
   margin-top: 25px;
   margin-right: 25px;
-  font-family: 'PressStart2P-Regular', Arial, sans-serif;
+  font-family: var(--accent-font);
   font-size: 14px;
   font-weight: 400;
   -webkit-text-stroke: 1px var(--bkg-color);
@@ -394,7 +323,6 @@
   filter: saturate(250%) hue-rotate(90deg) grayscale(20%) invert(25%) blur(2px);
 }
 
-
 .none_filter {
   filter: none;
 }
@@ -437,14 +365,14 @@
   width: 100%;
   height: 100%;
   background-color: var(--accent-color);
-  animation: scale 0.5s ease-in-out forwards;
+  animation: scale .5s ease-in-out forwards;
   transform-origin: left;
   top: 0px;
   left: 0px;
 }
 
 .save_button_text {
-  font-family: 'PressStart2P-Regular', Arial, sans-serif;
+  font-family: var(--accent-font);
   margin-top: auto;
   margin-bottom: auto;
   font-size: 14px;
@@ -498,7 +426,7 @@
 
 .dialog_text {
   font-size: 14px;
-  font-family: 'PressStart2P-Regular', Arial, sans-serif;
+  font-family: var(--accent-font);
   color: var(--accent-color);
   text-transform: uppercase;
   line-height: 21px;
@@ -515,6 +443,11 @@
   display: flex;
   justify-content: center;
   padding: 0;
+}
+
+.ok_button:focus-visible {
+  outline: none;
+  animation: shadow 0.3s ease forwards;
 }
 
 @media (width <= 375px) {
@@ -538,8 +471,8 @@
 .ok_button__text{ 
   color: var(--accent-color);
   font-size: 14px;
-  font-weight: var(--wght-text);
-  font-family: 'PressStart2P-Regular', Arial, sans-serif;
+  font-weight: 400;
+  font-family: var(--accent-font);
   color: var(--accent-color-button);
   mix-blend-mode: difference;
   align-self: center;
