@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   background-color: var(--bkg-color);
   color: var(--accent-color);
   background-image: var(--bkg-image);
@@ -49,14 +49,14 @@
 }
 
 .header_title {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'Fantasy';
   text-transform: uppercase;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   color: var(--accent-color);
 }
 
 .header_title_text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'Fantasy';
   text-transform: uppercase;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   color: var(--accent-color);
@@ -75,7 +75,7 @@
 }
 
 .theme-menu__button {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'Fantasy';
   appearance: none;
   color: var(--accent-sbtl-clr);
   background-color: transparent;
@@ -150,7 +150,7 @@
 }
 
 .section_title_text {
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--wght-title);
   font-size: 18px;
   color: var(--accent-color);
@@ -214,7 +214,7 @@
 }
 
 .button__text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'Fantasy';
   align-self: center;
   font-size: 14px;
   font-variation-settings: "wght" var(--wght-text);
@@ -271,7 +271,7 @@
   inset-inline-end: 0;
   margin-top: 25px;
   margin-right: 25px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'Fantasy';
   font-size: 14px;
   font-weight: 400;
   -webkit-text-stroke: 1px var(--bkg-color);
@@ -372,7 +372,7 @@
 }
 
 .save_button_text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'Fantasy';
   margin-top: auto;
   margin-bottom: auto;
   font-size: 14px;
@@ -426,7 +426,7 @@
 
 .dialog_text {
   font-size: 14px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'Fantasy';
   color: var(--accent-color);
   text-transform: uppercase;
   line-height: 21px;
@@ -472,7 +472,7 @@
   color: var(--accent-color);
   font-size: 14px;
   font-weight: 400;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'Fantasy';
   color: var(--accent-color-button);
   mix-blend-mode: difference;
   align-self: center;
